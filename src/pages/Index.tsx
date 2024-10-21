@@ -30,6 +30,12 @@ const Index = () => {
             linkText="Healthy Eating"
             linkUrl="/nutrition"
           />
+          <InfoCard
+            title="Monkeypox Information"
+            content="Learn about monkeypox symptoms, prevention, and what to do if you suspect infection."
+            linkText="Monkeypox Facts"
+            linkUrl="/monkeypox"
+          />
         </div>
         <ResourceList />
       </main>
