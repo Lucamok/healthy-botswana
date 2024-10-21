@@ -36,6 +36,12 @@ const Index = () => {
             linkText="Monkeypox Facts"
             linkUrl="/monkeypox"
           />
+          <InfoCard
+            title="Oral Health"
+            content="Discover the importance of good oral hygiene and learn tips for maintaining a healthy smile."
+            linkText="Dental Care Tips"
+            linkUrl="/oral-health"
+          />
         </div>
         <ResourceList />
       </main>
