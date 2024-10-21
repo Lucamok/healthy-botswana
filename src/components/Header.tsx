@@ -7,11 +7,13 @@ export const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">Botswana Health</h1>
         <div className="flex-grow flex justify-center">
-          <img 
-            src="/ministry-of-health-logo.png" 
-            alt="Ministry of Health Logo" 
-            className="h-16 mx-auto object-cover"
-          />
+          <div className="bg-white p-2 rounded">
+            <img 
+              src="/ministry-of-health-logo.png" 
+              alt="Ministry of Health Logo" 
+              className="h-20 w-auto mx-auto object-contain"
+            />
+          </div>
         </div>
         <nav className="flex items-center">
           <ul className="flex space-x-4 mr-4">
