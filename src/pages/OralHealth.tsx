@@ -8,7 +8,7 @@ const OralHealth = () => {
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold text-center mb-8">Oral Health Tips and Information</h1>
         <div className="bg-white shadow-md rounded-lg p-6">
-          <div className="flex flex-col md:flex-row gap-6">
+          <div className="flex flex-col md:flex-row gap-8">
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-4">Maintaining Good Oral Hygiene</h2>
               <ul className="list-disc pl-6 space-y-2">
@@ -20,11 +20,11 @@ const OralHealth = () => {
                 <li>Visit your dentist regularly for check-ups and cleanings</li>
               </ul>
             </div>
-            <div className="md:w-1/3 flex items-start justify-center">
+            <div className="md:w-2/5 lg:w-1/3 flex items-start justify-center">
               <img 
-                src="/brushing-teeth-diagram.png" 
+                src="/brushing-teeth-diagram.jpg" 
                 alt="How to brush your teeth diagram" 
-                className="max-w-full h-auto rounded-lg shadow-md"
+                className="w-full h-auto rounded-lg shadow-md border-2 border-gray-200 object-contain bg-white p-2"
               />
             </div>
           </div>
