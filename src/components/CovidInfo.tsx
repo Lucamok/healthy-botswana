@@ -6,17 +6,24 @@ import { useToast } from "@/components/ui/use-toast";
 
 export const CovidInfo: React.FC = () => {
   const { toast } = useToast();
-  const { data: covidData, isLoading, error } = useQuery({
+  const { data: covidData, isLoading } = useQuery({
     queryKey: ['covidStats'],
     queryFn: healthApi.getCovidStats,
-    onError: () => {
+    retry: 1,
+    gcTime: 1000 * 60 * 5, // 5 minutes
+    staleTime: 1000 * 60 * 1, // 1 minute
+  });
+
+  // Handle errors using the useEffect hook
+  React.useEffect(() => {
+    if (!covidData) {
       toast({
         title: "Error",
         description: "Failed to fetch COVID-19 statistics",
         variant: "destructive",
       });
     }
-  });
+  }, [covidData, toast]);
 
   if (isLoading) {
     return (
