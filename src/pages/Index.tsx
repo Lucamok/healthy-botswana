@@ -2,12 +2,23 @@ import React from 'react';
 import { Header } from '../components/Header';
 import { InfoCard } from '../components/InfoCard';
 import { ResourceList } from '../components/ResourceList';
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <Header />
       <main className="container mx-auto px-4 py-8">
+        <Alert className="mb-8 bg-green-50 border-green-200">
+          <AlertTitle className="text-green-800 text-xl">
+            Welcome to Botswana Health Awareness System
+          </AlertTitle>
+          <AlertDescription className="text-green-700 mt-2">
+            Your comprehensive resource for health information and guidance in Botswana. 
+            Explore our various health topics and resources to stay informed and healthy.
+          </AlertDescription>
+        </Alert>
+
         <h1 className="text-3xl font-bold text-center mb-8">Botswana Health Awareness System</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           <InfoCard
