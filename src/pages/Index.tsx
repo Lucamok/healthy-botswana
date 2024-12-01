@@ -44,6 +44,24 @@ const Index = () => {
             linkText="Dental Care Tips"
             linkUrl="/oral-health"
           />
+          <InfoCard
+            title="Sexual Health"
+            content="Important information about sexual health, STIs, prevention, and treatment options."
+            linkText="Learn More"
+            linkUrl="/sexual-health"
+          />
+          <InfoCard
+            title="Child Health"
+            content="Essential information about child health, vaccinations, and common health risks in Botswana."
+            linkText="Learn More"
+            linkUrl="/child-health"
+          />
+          <InfoCard
+            title="Emergency Contacts"
+            content="Find important emergency numbers and contact information for health services in Botswana."
+            linkText="View Contacts"
+            linkUrl="/contact"
+          />
         </div>
       </main>
     </div>
