@@ -1,7 +1,6 @@
 import React from 'react';
 import { Header } from '../components/Header';
 import { InfoCard } from '../components/InfoCard';
-import { ResourceList } from '../components/ResourceList';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 const Index = () => {
@@ -24,7 +23,7 @@ const Index = () => {
           <InfoCard
             title="Malaria Prevention"
             content="Discover effective ways to protect yourself and your family from malaria."
-            linkText="Prevention Tips"
+            linkText="Learn More"
             linkUrl="/malaria"
           />
           <InfoCard
@@ -36,7 +35,7 @@ const Index = () => {
           <InfoCard
             title="Monkeypox Information"
             content="Learn about monkeypox symptoms, prevention, and what to do if you suspect infection."
-            linkText="Monkeypox Facts"
+            linkText="Learn More"
             linkUrl="/monkeypox"
           />
           <InfoCard
@@ -46,7 +45,6 @@ const Index = () => {
             linkUrl="/oral-health"
           />
         </div>
-        <ResourceList />
       </main>
     </div>
   );
