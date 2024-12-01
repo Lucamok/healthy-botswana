@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import OralHealth from "./pages/OralHealth";
 import MalariaPrevention from "./pages/MalariaPrevention";
+import Nutrition from "./pages/Nutrition";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/oral-health" element={<OralHealth />} />
           <Route path="/malaria" element={<MalariaPrevention />} />
+          <Route path="/nutrition" element={<Nutrition />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
