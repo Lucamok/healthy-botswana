@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from '../components/Header';
 import { InfoCard } from '../components/InfoCard';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   return (
@@ -62,6 +63,31 @@ const Index = () => {
             linkText="View Contacts"
             linkUrl="/contact"
           />
+        </div>
+
+        <Separator className="my-8" />
+        
+        <div className="mt-8 text-center">
+          <h2 className="text-xl font-semibold mb-4">Official Health Resources</h2>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+            <a 
+              href="https://www.moh.gov.bw" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-green-600 hover:text-green-800 underline"
+            >
+              Ministry of Health Botswana
+            </a>
+            <span className="hidden md:inline">•</span>
+            <a 
+              href="https://www.unicef.org/botswana" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-green-600 hover:text-green-800 underline"
+            >
+              UNICEF Botswana
+            </a>
+          </div>
         </div>
       </main>
     </div>
